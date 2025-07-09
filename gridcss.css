@@ -1,0 +1,62 @@
+body{
+    font-family: sans-serif;
+    margin:0;
+    padding: 40px;
+    font-family: sans-serif;
+ 
+    background-color: aliceblue;
+}
+.grid-container
+{
+  
+    /* container into css grid layout */
+       height: 78vh;
+    display: grid;
+    /* create 3 equals width column - ( repeat :(3,1fr)) */
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "one one two two" 
+    "one one three three"
+    "one one three three";
+    padding: 0px;
+    background-color: #fff;
+    border: 2px solid rgb(255, 0, 0);
+    border-bottom:2px solid rgb(255, 0, 0) ;
+   
+   
+}
+.grid-item-1
+{
+    grid-area: one;
+     padding: 20px;
+    background-color: green;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: medium;
+    border: 2px solid yellow;
+    
+   
+}
+.grid-item-2{
+   
+    grid-area: two;
+    background-color:green;
+    text-align: center;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+     font-size: medium;
+    
+    border: 4px solid yellow;
+}
+.grid-item-3{
+    
+    grid-area: three;
+    background-color:green;
+    text-align: center;
+    padding: 20px;
+    color: rgb(9, 9, 10);
+     font-size: medium;
+     border: 4px solid yellow;
+
+}
+
